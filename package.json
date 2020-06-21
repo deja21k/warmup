@@ -1,0 +1,43 @@
+{
+  "name": "asset",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle.js",
+  "scripts": {
+    "build": "webpack --progress --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.24.7",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.0",
+    "cssstats": "^3.2.0",
+    "doiuse": "^4.1.0",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-task-loader-recursive": "^1.1.2",
+    "gulp-uncss": "^1.0.6",
+    "immutable-css": "^1.1.2",
+    "lost": "^8.3.0",
+    "natives": "^1.1.6",
+    "postcss-assets": "^5.0.0",
+    "postcss-combine-duplicated-selectors": "^6.0.3",
+    "postcss-discard-comments": "^4.0.0",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "postcss-merge-longhand": "^4.0.5",
+    "postcss-merge-rules": "^4.0.1",
+    "postcss-normalize": "^7.0.1",
+    "postcss-reporter": "^6.0.0",
+    "postcss-scss": "^2.0.0",
+    "postcss-sorting": "^4.0.0",
+    "postcss-stats-reporter": "^0.4.0",
+    "rucksack-css": "^1.0.2"
+  },
+  "devDependencies": {}
+}

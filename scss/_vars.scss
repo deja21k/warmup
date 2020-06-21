@@ -1,0 +1,180 @@
+/**
+* -----------------------------------------------------------------------
+*                                  Colors
+* -----------------------------------------------------------------------
+*/
+
+$black: #000;
+$white: #fff;
+$silver: #373737;
+$green: #16a085;
+$green-btn: #1abc9c;
+$grey-bg: #f5f6f7;
+
+
+
+$space-05: 0.5rem;
+$space-1: 1rem;
+$space-2: 1.5rem;
+$space-3: 3rem;
+$space-4: 4rem;
+$space-10: 10rem;
+$space-15: 15rem;
+
+/**
+* -----------------------------------------------------------------------
+*                              Font Families
+* -----------------------------------------------------------------------
+*/
+
+$gotham-bold: 'GothamRounded-Bold';
+$gotham-book: 'GothamRounded-Book';
+
+
+/**
+* -----------------------------------------------------------------------
+*                              Icomoon
+* -----------------------------------------------------------------------
+*/
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-flickr3:before {
+  content: "\eaa5";
+}
+.icon-dribbble:before {
+  content: "\eaa7";
+}
+.icon-circle-left:before {
+  content: "\ea44";
+}
+.icon-circle-right:before {
+  content: "\ea42";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+
+
+@font-face {
+    font-family:"GothamRounded-Bold";
+    src:url("../fonts/GothamRounded-Bold.woff2") format("woff2"),url("../fonts/GothamRounded-Bold.woff") format("woff"),url("../fonts/GothamRounded-Bold.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+
+@font-face {
+    font-family:"GothamRounded-Book";
+    src:url("../fonts/GothamRounded-Book.woff2") format("woff2"),url("../fonts/GothamRounded-Book.woff") format("woff"),url("../fonts/GothamRounded-Book.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+/**
+* -----------------------------------------------------------------------
+*                             	Icomoon
+* -----------------------------------------------------------------------
+*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?i47kyp');
+  src:  url('../fonts/icomoon.eot?i47kyp#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?i47kyp') format('truetype'),
+    url('../fonts/icomoon.woff?i47kyp') format('woff'),
+    url('../fonts/icomoon.svg?i47kyp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-circle-right:before {
+  content: "\ea42";
+}
+.icon-circle-left:before {
+  content: "\ea44";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-flickr3:before {
+  content: "\eaa5";
+}
+.icon-dribbble:before {
+  content: "\eaa7";
+}
+.icon-appleinc:before {
+  content: "\eabe";
+}
+.icon-android:before {
+  content: "\eac0";
+}
+
+/**
+* -----------------------------------------------------------------------
+*                               Media Queries
+* -----------------------------------------------------------------------
+*/
+
+// Extra small screen / phone
+$screen-xs: 480px;
+
+// Small screen / tablet
+$screen-sm: 768px;
+
+// Medium screen / desktop
+$screen-md: 992px;
+
+// Large screen / wide desktop
+$screen-lg: 1200px;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm - 1);
+$screen-sm-max: ($screen-md - 1);
+$screen-md-max: ($screen-lg - 1);
+
+/**
+* -----------------------------------------------------------------------
+*                               respond-to()
+* -----------------------------------------------------------------------
+*/
+
+@mixin respond-to($media) {
+	@if $media == mobile {
+		@media (max-width: $screen-xs-max) { @content }
+	}
+	@else if $media == tablet {
+		@media (min-width: $screen-sm) and (max-width: $screen-sm-max) { @content }
+	}
+	@else if $media == laptop {
+		@media (min-width: $screen-md) and (max-width: $screen-md-max) { @content }
+	}
+	@else if $media == desktop {
+		@media (min-width: $screen-lg) { @content }
+	}
+	@else if $media == laptop-up{
+		@media (min-width: $screen-md) and (max-width: $screen-lg) { @content }
+	}
+	@else if $media == tablet-down{
+		@media (max-width: $screen-sm-max) { @content }
+	}
+	@else {
+		@media screen and (min-width: $media + px) { @content; }
+	}
+}

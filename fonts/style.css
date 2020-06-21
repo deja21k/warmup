@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?m6nuv6');
+  src:  url('fonts/icomoon.eot?m6nuv6#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?m6nuv6') format('truetype'),
+    url('fonts/icomoon.woff?m6nuv6') format('woff'),
+    url('fonts/icomoon.svg?m6nuv6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-circle-right:before {
+  content: "\ea42";
+}
+.icon-circle-left:before {
+  content: "\ea44";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-flickr3:before {
+  content: "\eaa5";
+}
+.icon-dribbble:before {
+  content: "\eaa7";
+}
+.icon-appleinc:before {
+  content: "\eabe";
+}
+.icon-android:before {
+  content: "\eac0";
+}

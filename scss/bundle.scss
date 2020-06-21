@@ -1,0 +1,27 @@
+/**
+* -----------------------------------------------------------------------
+*                                SMACSS Way
+* -----------------------------------------------------------------------
+*/
+
+@import "vars";
+@import "base";
+@import "modules";
+@import "layout";
+@import "state";
+
+/**
+* -----------------------------------------------------------------------
+*                                  Blocks
+* -----------------------------------------------------------------------
+*/
+
+//----------- Global
+@import "blocks/block-header";
+// @import "blocks/block-footer";
+// @import "blocks/block-represent";
+// @import "blocks/block-design";
+// @import "blocks/block-community";
+// @import "blocks/block-subscribe";
+// @import "blocks/block-download";
+// @import "blocks/block-navigation"

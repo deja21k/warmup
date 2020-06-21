@@ -1,0 +1,18 @@
+/*
+State Rules.
+Declarations for the appearance of a module in its various states.
+
+Simply put, these states may change in three ways:
+- Class name, the change happens by adding or removing a class, usually
+with Javascript
+- Pseudo-class, the change happens to elements that are descendants or
+siblings of the element with the pseudo-class
+- Media query, the change happens under defined criteria, such as
+different viewport sizes.
+*/
+
+/**
+* -----------------------------------------------------------------------
+*                              Layout Parts
+* -----------------------------------------------------------------------
+*/
